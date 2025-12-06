@@ -1,6 +1,7 @@
 # Genetic Algorithm and PSO Optimization for Race Car Frame Design
 
 This repository contains Python implementations of Genetic Algorithm (GA) and Particle Swarm Optimization (PSO) applied to the structural optimization of a race car frame. The study focuses on minimizing the total structural weight while ensuring that safety and displacement constraints are satisfied. A finite element model (FEM) is constructed using Python to evaluate each candidate design. The full methodology and analysis are documented in the accompanying report.
+<img width="747" height="807" alt="image" src="https://github.com/user-attachments/assets/68a3e3e6-84e7-4d21-b547-6f3185e6d9fc" />
 
 ## Overview
 
@@ -30,12 +31,14 @@ The GA results demonstrate that incorporating elitism improves convergence and y
 ## GA With Constraints
 
 A refined version of the GA explicitly incorporates constraint handling. Structural weight, maximum displacement, and minimum FOS are normalized, and penalty terms are added when constraints are violated. This ensures that the optimization process naturally favors feasible designs. Both tested GA configurations successfully produce designs that satisfy all constraints.
+<img width="693" height="367" alt="image" src="https://github.com/user-attachments/assets/58e55843-1af7-4959-b503-1fec21303157" />
 
 ## Particle Swarm Optimization
 
 A binary-encoded PSO method is also implemented. The design variables are encoded into bit strings and decoded during fitness evaluation. Two PSO parameter sets were tested, each producing feasible solutions that satisfy all displacement and safety constraints.
 
 Compared to the GA results, PSO achieves lower structural weights and higher safety margins. Although PSO exhibits more fluctuation during convergence, it ultimately finds better solutions and does so with fewer evaluations.
+<img width="712" height="368" alt="image" src="https://github.com/user-attachments/assets/547db284-2408-4eaa-9949-9c83429240d9" />
 
 ## Comparative Analysis
 
